@@ -15,8 +15,10 @@
     "@mui/icons-material": "^6.4.4",
     "@mui/material": "^6.4.4",
     "axios": "^1.7.9",
+    "movie-trailer": "^3.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-youtube": "^10.1.0",
     "vite-plugin-env-compatible": "^2.0.1"
   },
   "devDependencies": {

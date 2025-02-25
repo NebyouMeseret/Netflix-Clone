@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import instance from "../Utils/axios";
+import BaseURL from "../Utils/axios";
 import requests from "../Utils/requests";
 import "./Banner.css";
 
@@ -9,7 +9,7 @@ function Banner() {
   useEffect(() => {
     (async () => {
       try {
-        const request = await instance.get(requests.fetchNetflixOriginals);
+        const request = await BaseURL.get(requests.fetchNetflixOriginals);
         const results = request.data.results;
 
         if (results.length > 0) {
@@ -20,6 +20,7 @@ function Banner() {
       } catch (error) {
         console.log("Error fetching data:", error);
       }
+      document.title = "Home-Netflix";
     })();
   }, []);
 
